@@ -1,65 +1,18 @@
+import '@/app/globals.css'
 import Image from "next/image";
+import img from '@/public/m.jpg'
+import Link from 'next/link';
+import PhoneNumber from '@/client-server-mix/PhoneNumber';
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+    <main className="bg-linear-to-l from-blue-300 to-green-400 h-screen flex flex-col items-center pt-[10vh]">
+      <div className="name hover:cursor-default bg-blue-400 text-center py-1 px-8 pb-2 rounded-2xl text-3xl hover:text-4xl transition-all duration-500"><h1 className="text-white">Hi i am, <span className='myName text-4xl'>Masum</span> Mahmud</h1></div>
+      <div><h1 className="hover:cursor-default dev text-white text-6xl mt-10 transition-all duration-500 hover:text-7xl">Full Stake Web Developer</h1></div>
+      {/* <Image src={img} alt='This is the Logo' height={200} className='transition-all duration-700 mt-10'/> */}
+      <p className='p cursor-default mt-10 text-xl text-white'>হ্যালো, সবাই কেমন আছেন আশা করি সবাই ভালো আছেন<br/>আমাদের এখানে <span className='f bg-amber-300 pb-1 px-3 rounded-lg'>Back-End 'Django'</span> আর <span className='b bg-amber-300 pb-1 px-3 rounded-lg'>Front-End 'Next.js'</span><br/>দিয়ে কন্ট্রোল করা হয় ।<br/>আপনি যদি ওয়েব সাইট বানাতে এচ্ছুক হন তবে<br/> অবশ্যই আমাদের সাথে যুগাযুক করুন <PhoneNumber/></p>
+      <Link href={'register/'} className='open bg-green-500 border-2 border-white py-1 px-10 rounded-xl text-2xl text-white mt-15 pb-2 hover:text-3xl transition-all duration-500 animate-[bounce_2s_linear_infinite]'>Account Open Now</Link>
+    </main>
+  )
 }
+export default Home;
