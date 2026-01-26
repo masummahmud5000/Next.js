@@ -18,6 +18,11 @@ export default function RootLayout({ children }) {
           </ul>
         </nav>
         {children}
+        <footer className='flex flex-col mt-30 gap-3 bg-black text-white h-40 items-center justify-center border-5 border-x border-b'>
+          <h1 className='text-white'>সৌজন্যে : মাসুম <h1 className='fa fa-heart text-red-600'/> মনিরের ফুফু </h1>
+          <h1>© Copyright 2026</h1>
+          <h1 className='text-green-600'>Admin : masum@gmail.com</h1>
+        </footer>
       </body>
     </html>
   );
