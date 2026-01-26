@@ -5,7 +5,7 @@ import { NextRequest } from "next/server";
 export function middleware (request) {
 
     const token = request.cookies.get('access_token')?.value
-    if (!token && request.nextUrl.pathname.startsWith('/dash')){
+    if (!token && request.nextUrl.pathname.startsWith('/ash')){
         return NextResponse.redirect(new URL('/login', request.url));
     }else{
         return NextResponse.next();
