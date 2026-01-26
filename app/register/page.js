@@ -9,13 +9,13 @@ const Register = () => {
             <form className="bg-amber-500 px-12 py-8 flex flex-col rounded-2xl">
                 <h1 className="text-center text-blue-800 text-3xl mb-4">Register</h1>
                 <label>Name</label>
-                <input type="text" required placeholder="Enter Your Name"/>
+                <div className='input'><input type="text" required placeholder="Enter Your Name"/><span className='fa fa-user'/></div>
 
                 <label>User Name</label>
-                <input type="text" required placeholder="Type Unique UserName"/>
+                <div className='input'><input type="text" required placeholder="Type Unique UserName"/><span className='fa fa-user-circle'/></div>
 
                 <label>Password</label>
-                <input type="password" required placeholder="Type Strong Password"/>
+                <div className='input'><input type="password" required placeholder="Type Strong Password"/><span className='fa fa-lock'/></div>
 
                 <p className="mt-3 cursor-default text-white">Already Created. <Link className="hover:text-lg hover:text-blue-700" href={'login/'}>Login</Link></p>
 

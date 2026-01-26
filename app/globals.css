@@ -29,7 +29,8 @@ label{
   color: blue;
 }
 input{
-  background: white;
+  /* background: white; */
+  width: 180px;
   color: black;
   padding-left: 10px;
   height: 28px;
@@ -40,6 +41,17 @@ input:focus{
 }
 form{
   box-shadow: 0 0 12px black;
+}
+.input{
+  background: white;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  border-radius: 7px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.input>span{
+  color: blue;
 }
 
 /* :root {
