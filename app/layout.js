@@ -3,6 +3,7 @@ import "./globals.css";
 import Link from 'next/link';
 import Image from 'next/image';
 import logoImg from '@/app/favicon.ico'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 export default function RootLayout({ children }) {
   return (
